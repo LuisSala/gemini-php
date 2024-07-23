@@ -18,6 +18,7 @@ class HTTPClient
      */
     public static function post(string $url, array $headers = [], string $data = ''): string
     {
+        print($data);
         $ch = curl_init($url);
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
         curl_setopt($ch, CURLOPT_POST, true);
