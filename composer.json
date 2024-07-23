@@ -22,9 +22,6 @@
         }
     ],
     "license": "MIT",
-    "support": {
-        "discord": "https://discord.gg/yCDS5TgupC"
-    },
     "minimum-stability": "stable",
-    "version": "0.1.8"
+    "version": "0.1.0"
 }
