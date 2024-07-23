@@ -12,7 +12,7 @@
     },
     "autoload": {
         "psr-4": {
-            "luiddsls\\GeminiPHP\\": "src/"
+            "luissala\\GeminiPHP\\": "src/"
         }
     },
     "authors": [
