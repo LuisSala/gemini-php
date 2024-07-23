@@ -76,7 +76,7 @@ class GeminiClient
     private function buildUrl(): string
     {
         return 'https://' . $this->regionName .
-            '-aiplatform.googleapis.com/v1' .
+            '-aiplatform.googleapis.com/v1beta1' .
             '/projects/' . $this->projectId .
             '/locations/' . $this->regionName .
             '/publishers/google/models/' . $this->modelName .
