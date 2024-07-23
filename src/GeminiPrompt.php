@@ -175,7 +175,7 @@ class GeminiPrompt
             'tools' => $this->tools,
             'safety_settings' => $this->safetySettings,
             'generation_config' => $this->generationConfig
-        ]);
+        ],JSON_FORCE_OBJECT);
     }
 
     /**
