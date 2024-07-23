@@ -175,7 +175,7 @@ class GeminiPrompt
             'tools' => $this->tools,
             'safety_settings' => $this->safetySettings,
             'generation_config' => $this->generationConfig
-        ],JSON_FORCE_OBJECT);
+        ]);
     }
 
     /**
@@ -200,6 +200,11 @@ class GeminiPrompt
         Validate::tools($this->tools) or throw new \Exception("Error: Tools validation failed for tools: " . json_encode($this->tools));
         Validate::safetySettings($this->safetySettings) or throw new \Exception("Error: Safety settings validation failed for settings: " . json_encode($this->safetySettings));
         Validate::generationConfig($this->generationConfig) or throw new \Exception("Error: Generation config validation failed for config: " . json_encode($this->generationConfig));
+        
+        if (isset($tool['googleSearchRetrieval'])) {
+            $this->tools['googleSearchRetrieval']=(object)$this->tools['googleSearchRetrieval'];
+        }
+
         return true;
     }
 }
