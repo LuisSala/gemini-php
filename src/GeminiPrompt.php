@@ -201,9 +201,7 @@ class GeminiPrompt
         Validate::safetySettings($this->safetySettings) or throw new \Exception("Error: Safety settings validation failed for settings: " . json_encode($this->safetySettings));
         Validate::generationConfig($this->generationConfig) or throw new \Exception("Error: Generation config validation failed for config: " . json_encode($this->generationConfig));
         
-        print_r($this->tools);
         if (isset($this->tools[0])) {
-            print("Converting googleSearchRetrieval to object");
             $this->tools[0]['googleSearchRetrieval']=(object)[];
         }
 
