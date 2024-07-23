@@ -247,7 +247,7 @@ class Validate
         if (count($tools) > 1) throw new \Exception('Error: Only one set of function_declarations is currently supported.');
         $tool = $tools[0];
 
-        if (!is_array($tool) && (!isset($tool['retrieval']) || !isset($tool['function_declarations']))) {
+        if (!is_array($tool) && (!isset($tool['googleSearchRetrieval']) || !isset($tool['retrieval']) || !isset($tool['function_declarations']))) {
             throw new \Exception('Error: Each tool must be an array with a "function_declarations" and/or a "retrieval" key.');
         }
 
@@ -282,6 +282,11 @@ class Validate
         }
 
         if (isset($tool['retrieval'])) {
+            return true;
+        }
+
+        
+        if (isset($tool['googleSearchRetrieval'])) {
             return true;
         }
 
