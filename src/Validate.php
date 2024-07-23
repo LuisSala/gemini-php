@@ -1,6 +1,6 @@
 <?php
 
-namespace RPurinton\GeminiPHP;
+namespace LuisSala\GeminiPHP;
 
 /**
  * Class Validate
@@ -8,7 +8,7 @@ namespace RPurinton\GeminiPHP;
  * This class provides static methods for validating various aspects of the GeminiPrompt object.
  * It includes methods for validating the contents, generation configuration, safety settings, and tools.
  *
- * @package RPurinton\GeminiPHP
+ * @package LuisSala\GeminiPHP
  */
 class Validate
 {

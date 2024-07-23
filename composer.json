@@ -12,13 +12,17 @@
     },
     "autoload": {
         "psr-4": {
-            "luissala\\GeminiPHP\\": "src/"
+            "LuisSala\\GeminiPHP\\": "src/"
         }
     },
     "authors": [
         {
             "name": "Russell Purinton",
             "email": "russell.purinton@gmail.com"
+        },
+        {
+            "name": "Luis Sala",
+            "email": "56407+LuisSala@users.noreply.github.com"
         }
     ],
     "license": "MIT",

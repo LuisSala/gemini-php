@@ -1,6 +1,6 @@
 <?php
 
-namespace RPurinton\GeminiPHP;
+namespace LuisSala\GeminiPHP;
 
 use Google\Auth\ApplicationDefaultCredentials;
 
