@@ -288,7 +288,6 @@ class Validate
 
         
         if (isset($tool['googleSearchRetrieval'])) {
-            $tool['googleSearchRetrieval'] = new ArrayObject();
             return true;
         }
 
