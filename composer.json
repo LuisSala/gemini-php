@@ -1,6 +1,6 @@
 {
-    "name": "rpurinton/gemini-php",
-    "description": "A PHP client for the Gemini API.",
+    "name": "luissala/gemini-php",
+    "description": "A PHP client for the Gemini API. Derived from rpurinton/gemini-php",
     "type": "library",
     "require": {
         "php": "^8.0",
@@ -12,7 +12,7 @@
     },
     "autoload": {
         "psr-4": {
-            "RPurinton\\GeminiPHP\\": "src/"
+            "luiddsls\\GeminiPHP\\": "src/"
         }
     },
     "authors": [
