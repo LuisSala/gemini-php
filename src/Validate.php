@@ -251,7 +251,7 @@ class Validate
             throw new \Exception('Error: Each tool must be an array with a "function_declarations" and/or a "retrieval" key.');
         }
 
-        if (is_set($tool['function_declarations'])) {
+        if (isset($tool['function_declarations'])) {
 
             foreach ($tool['function_declarations'] as $functionDeclaration) {
                 if (!is_array($functionDeclaration) || !isset($functionDeclaration['name']) || !isset($functionDeclaration['description']) || !isset($functionDeclaration['parameters'])) {
@@ -281,7 +281,7 @@ class Validate
             }
         }
 
-        if (is_set($tool['retrieval'])) {
+        if (isset($tool['retrieval'])) {
             return true;
         }
 
