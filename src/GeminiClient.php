@@ -80,7 +80,7 @@ class GeminiClient
             '/projects/' . $this->projectId .
             '/locations/' . $this->regionName .
             '/publishers/google/models/' . $this->modelName .
-            ':streamGenerateContent';
+            ':generateContent'; // Was streamGenerateContent
     }
 
     /**
