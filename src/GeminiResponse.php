@@ -29,7 +29,8 @@ class GeminiResponse
     {
         $text = '';
         try {
-            foreach ($this->response as $candidate)
+            $candidate = $this->response;
+            //foreach ($this->response as $candidate)
                 foreach ($candidate['candidates'] as $candidate2)
                     if (isset($candidate2['content']['parts']))
                         foreach ($candidate2['content']['parts'] as $part)
