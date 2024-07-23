@@ -40,7 +40,7 @@ class Validate
     const VALID_THRESHOLDS = [
         'BLOCK_NONE',
         'BLOCK_LOW_AND_ABOVE',
-        'BLOCK_MED_AND_ABOVE',
+        'BLOCK_MEDIUM_AND_ABOVE',
         'BLOCK_HIGH_AND_ABOVE'
     ];
 
