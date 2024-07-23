@@ -56,7 +56,8 @@ class Validate
 
     const VALID_ROLES = [
         'user',
-        'assistant'
+        'assistant',
+        'model'
     ];
 
     /**
